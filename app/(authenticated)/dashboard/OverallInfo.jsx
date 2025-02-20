@@ -1,10 +1,7 @@
 'use client'
 import React from 'react'
 import ArrowIcon from '@/components/IconComponent/ArrowIcon'
-import EntertainmentIcon from "@assets/entertainment.svg";
-import ConnectivityIcon from "@assets/connectivity.svg";
-import HealthIcon from "@assets/health.svg";
-import InternetIcon from "@assets/internet.svg";
+import Image from 'next/image';
 
 export default function OverallInfo() {
     return (
@@ -27,17 +24,17 @@ export default function OverallInfo() {
 
 const SingleInfo = () => {
     const allConnect = [
-        { name: 'Entertainment', value: '95%', icon: EntertainmentIcon },
-        { name: 'Connectivity', value: '80%', icon: ConnectivityIcon },
-        { name: 'Health', value: '90%', icon: HealthIcon },
-        { name: 'Internet', value: '154', icon: InternetIcon, text: true },
+        { name: 'Entertainment', value: '95%', icon: '/assets/icons/entertainment.svg' },
+        { name: 'Connectivity', value: '80%', icon: '/assets/icons/connectivity.svg' },
+        { name: 'Health', value: '90%', icon: '/assets/icons/health.svg' },
+        { name: 'Internet', value: '154', icon: '/assets/icons/internet.svg', text: true },
     ];
 
     return (
         <div className="flex gap-5">
-            {allConnect.map(({ name, value, text, icon: Icon }) => (
+            {allConnect.map(({ name, value, text, icon }) => (
                 <div key={name} className="flex gap-2 lg:gap-4 items-center">
-                    <Icon className="w-6 h-auto" />
+                    <Image src={icon} width={500} height={500} alt='' className='w-6 h-auto' />
                     <div>
                         <p className="text-lg lg:text-2xl font-semibold">
                             {value} {text && <span className='text-sm lg:text-lg font-medium'>MB</span>}
