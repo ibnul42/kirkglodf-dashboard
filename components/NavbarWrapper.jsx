@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import ImageComponent from './ImageComponent';
 import Image from "next/image";
-// import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar";
 
 
 export default function NavbarWrapper({ children = null }) {
@@ -42,7 +42,7 @@ export default function NavbarWrapper({ children = null }) {
       ></div>
 
       {/* Sidebar */}
-      {/* <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} /> */}
+      <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
     </>
   );
 }
