@@ -8,9 +8,7 @@ export default function page() {
       src="/assets/dashboard.svg"
       alt="Background Photo"
     >
-      <NavbarWrapper>
-        <h1 className='text-2xl font-semibold text-[#010C06]'>Dashboard</h1>
-      </NavbarWrapper>
+      <h1 className='text-2xl font-semibold text-[#010C06]'>Dashboard</h1>
     </BackgroundPhoto>
   )
 }
