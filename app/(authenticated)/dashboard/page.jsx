@@ -11,6 +11,9 @@ export default function page() {
       src="/assets/dashboard.svg"
       alt="Background Photo"
     >
+      <NavbarWrapper>
+        <h1 className='text-2xl font-semibold text-[#010C06]'>Dashboard</h1>
+      </NavbarWrapper>
       <div className="flex gap-2 p-4">
         <OverallInfo />
         <div className="flex gap-2 items-center">

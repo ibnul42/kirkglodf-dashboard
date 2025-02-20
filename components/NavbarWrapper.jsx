@@ -2,13 +2,11 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import ImageComponent from './ImageComponent';
+import Image from "next/image";
 // import Sidebar from "./Sidebar";
 
 
 export default function NavbarWrapper({ children = null }) {
-  const MenuIcon = dynamic(() => import('@assets/menu.svg'), { ssr: false });
-  const NotificationIcon = dynamic(() => import('@assets/notification.svg'), { ssr: false });
-
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -20,7 +18,7 @@ export default function NavbarWrapper({ children = null }) {
       <div className="flex items-center justify-between gap-3 px-3 py-2 relative">
         {/* Menu Icon */}
         <div onClick={toggleSidebar} className="p-1 cursor-pointer">
-          <MenuIcon className="w-4 h-auto" />
+           <Image src='/assets/icons/menu.svg' width={500} height={500} alt='' className='w-4 h-auto' />
         </div>
 
         {/* Center Content */}
@@ -30,7 +28,7 @@ export default function NavbarWrapper({ children = null }) {
 
         {/* Right Section */}
         <div className="flex gap-4">
-          <NotificationIcon className="w-8 h-8" />
+          <Image src='/assets/icons/notification.svg' width={500} height={500} alt='' className='w-8 h-auto' />
           <div className="w-8 h-8 rounded-full overflow-hidden">
             <ImageComponent src="/assets/profile.jpg" className="object-cover" />
           </div>
