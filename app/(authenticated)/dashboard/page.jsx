@@ -11,10 +11,10 @@ export default function page() {
       src="/assets/dashboard.svg"
       alt="Background Photo"
     >
-      <div className="flex gap-2">
+      <div className="flex gap-2 p-4">
         <OverallInfo />
         <div className="flex gap-2 items-center">
-          <div className="">
+          <div className="border-l mt-10">
             <Image src='/assets/weather.png' height={500} width={500} className='w-32 h-auto' alt='' />
           </div>
           <div className="space-y-2">
