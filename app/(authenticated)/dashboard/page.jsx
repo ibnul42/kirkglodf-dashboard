@@ -3,6 +3,7 @@ import NavbarWrapper from '@/components/NavbarWrapper'
 import Image from 'next/image'
 import React from 'react'
 import OverallInfo from './OverallInfo'
+import AllDevices from './AllDevices'
 
 
 export default function page() {
@@ -31,6 +32,7 @@ export default function page() {
           </div>
         </div>
       </div>
+      <AllDevices />
     </BackgroundPhoto>
   )
 }

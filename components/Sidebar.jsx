@@ -23,7 +23,7 @@ export default function Sidebar({ isSidebarOpen, toggleSidebar }) {
 
     return (
         <div
-            className={`fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+            className={`fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
             onClick={(e) => e.stopPropagation()} // Prevents overlay click from closing sidebar
         >
