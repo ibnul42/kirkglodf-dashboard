@@ -11,11 +11,12 @@ export default function page() {
     <BackgroundPhoto
       src="/assets/dashboard.svg"
       alt="Background Photo"
+      style={{display: 'flex', flexDirection: 'column', gap:'30px', paddingBottom: '20px'}}
     >
       <NavbarWrapper>
         <h1 className='text-2xl font-semibold text-[#010C06]'>Dashboard</h1>
       </NavbarWrapper>
-      <div className="flex gap-2 p-4">
+      <div className="flex gap-2 px-10">
         <OverallInfo />
         <div className="flex gap-2 items-center">
           <div className="border-l mt-10">
