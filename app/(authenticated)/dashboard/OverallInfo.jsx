@@ -2,13 +2,14 @@
 import React from 'react'
 import ArrowIcon from '@/components/IconComponent/ArrowIcon'
 import Image from 'next/image';
+import ArrowFillIcon from '@/components/IconComponent/ArrowFillIcon';
 
 export default function OverallInfo() {
     return (
         <div className="flex-1 space-y-6">
             <div className="flex items-center gap-3">
                 <p className='text-2xl font-semibold'>Living Room</p>
-                <ArrowIcon className="w-6 h-6" stroke="#31ED93" />
+                <ArrowFillIcon className="w-5 h-auto" stroke="#31ED93" />
             </div>
             <article>
                 <p className='text-sm text-[#9B9B9B]'>
