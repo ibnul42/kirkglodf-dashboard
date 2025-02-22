@@ -24,7 +24,7 @@ export default function SettingsPage() {
             <NavbarWrapper>
                 <h1 className='text-2xl font-semibold text-[#010C06]'>Settings</h1>
             </NavbarWrapper>
-            <section className='flex-1 flex justify-center items-start px-20 pt-6'>
+            <section className='flex-1 flex justify-center items-start px-20'>
                 <div className="w-full max-w-6xl grid grid-cols-2 gap-5">
                     {items.map((item, index) => (
                         <div key={index} className="px-6 py-6 rounded-3xl shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] flex gap-3">

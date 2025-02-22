@@ -4,16 +4,16 @@
             <g transform="translate(0 0)">
                 <path
                     d="M0,43.906A15.431,15.431,0,0,1,9.664,29.662V6a6,6,0,0,1,6-6h.08a6,6,0,0,1,6,6V29.662a15.389,15.389,0,0,1-6.04,29.67A15.567,15.567,0,0,1,0,43.906Z"
-                    transform="translate(0 0)" fill="none" stroke="#d4d4d4" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="3" />
+                    transform="translate(0 0)" fill="none" stroke="#d4d4d4" strokeLinecap="round" strokeLinejoin="round"
+                    strokeWidth="3" />
             </g>
             <path d="M585.282,1410.948h4.748" transform="translate(-561.634 -1402.53)" fill="none" stroke="#d4d4d4"
-                stroke-linecap="round" stroke-width="3" />
+                strokeLinecap="round" strokeWidth="3" />
             <path d="M585.282,1410.948h4.748" transform="translate(-561.634 -1393.679)" fill="none" stroke="#d4d4d4"
-                stroke-linecap="round" stroke-width="3" />
+                strokeLinecap="round" strokeWidth="3" />
         </g>
         <ellipse cx="8.544" cy="8.443" rx="8.544" ry="8.443" transform="translate(7.161 35.376)" fill="#d4d4d4" />
-        <line y1="17.132" transform="translate(15.704 21.099)" fill="none" stroke="#d4d4d4" stroke-linecap="round"
-            stroke-width="3" />
+        <line y1="17.132" transform="translate(15.704 21.099)" fill="none" stroke="#d4d4d4" strokeLinecap="round"
+            strokeWidth="3" />
     </g>
 </svg>

@@ -2,8 +2,8 @@
     <g transform="translate(-161 -355.633)">
         <path
             d="M27.816,2.577a2.723,2.723,0,0,0-3.352,0C19.243,6.561,3.828,19.558,3.91,34.7a22.257,22.257,0,0,0,44.515.027C48.452,19.806,33.01,6.589,27.816,2.577Z"
-            transform="translate(158.59 355.25)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3" />
+            transform="translate(158.59 355.25)" fill="none" stroke="#fff" strokeMiterlimit="10" strokeWidth="3" />
         <path d="M165.116,366.723s-.665,12.122,9.3,13.949" transform="translate(7.673 20.801)" fill="none"
-            stroke="#fff" stroke-linecap="round" stroke-width="3" />
+            stroke="#fff" strokeLinecap="round" strokeWidth="3" />
     </g>
 </svg>
