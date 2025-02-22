@@ -9,7 +9,7 @@ import React from 'react';
 
 const BackgroundPhoto = ({ src, children, style }) => {
   return (
-    <div className="w-full h-screen"
+    <div className="w-full h-full"
     style={{
       backgroundImage: `url(${src})`,
       backgroundSize: 'cover',
