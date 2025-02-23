@@ -44,7 +44,7 @@ export default function MapComponent() {
                     "circle-radius": 50,
                     "circle-color": "#31ED93",
                     "circle-opacity": 0.1,
-                    "circle-stroke-width": 0,
+                    "circle-strokeWidth": 0,
                     // "circle-stroke-color": "#31ED93",
                 },
             });
