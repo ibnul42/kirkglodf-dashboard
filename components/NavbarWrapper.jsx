@@ -15,7 +15,7 @@ export default function NavbarWrapper({ children = null }) {
 
   return (
     <>
-      <div className="flex items-center justify-between gap-3 px-3 pt-1 relative pb-6">
+      <div className="flex items-center justify-between gap-3 px-3 pt-1 relative pb-6 bg-transparent">
         {/* Menu Icon */}
         <div onClick={toggleSidebar} className="p-1 cursor-pointer">
            <Image src='/assets/icons/menu.svg' width={500} height={500} alt='' className='w-4 h-auto' />
