@@ -1,6 +1,3 @@
-// import { FiSearch } from "react-icons/fi";
-// import { HiOutlineMenuAlt3 } from "react-icons/hi";
-
 import OutlineMenuIcon from "@/components/IconComponent/OutlineMenuIcon";
 import SearchIcon from "@/components/IconComponent/SearchIcon";
 
