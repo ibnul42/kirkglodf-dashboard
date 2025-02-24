@@ -6,7 +6,7 @@ const SearchIcon = ({ className = "", stroke = "#d4d4d4", ...props }) => {
           <circle cx="8" cy="8" r="8" stroke="none"/>
           <circle cx="8" cy="8" r="7.5" fill="none"/>
         </g>
-        <line id="Line_9" data-name="Line 9" x2="3" y2="3" transform="translate(13.5 13.5)" fill="none" stroke={stroke} stroke-linecap="round" strokeWidth="1"/>
+        <line id="Line_9" data-name="Line 9" x2="3" y2="3" transform="translate(13.5 13.5)" fill="none" stroke={stroke} strokeLinecap="round" strokeWidth="1"/>
       </svg>
     );
 };
