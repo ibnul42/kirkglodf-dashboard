@@ -82,7 +82,7 @@ export default function MapComponent() {
 
             {/* all informations */}
             <div className="absolute left-0 bottom-0 w-full rounded-tl-lg rounded-tr-lg overflow-hidden bg-white">
-                <div className="py-10 px-10  shadow-lg grid grid-cols-3 divide-x">
+                <div className="py-8 px-10  shadow-lg grid grid-cols-3 divide-x">
                     <div className="pl-10 flex items-center gap-4">
                         <div className="w-6 h-6 rounded-full overflow-hidden flex justify-center items-center border border-[#31ED93]">
                             <div className="w-2.5 h-2.5 rounded-full bg-[#31ED93]"></div>

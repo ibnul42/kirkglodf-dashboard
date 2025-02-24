@@ -72,7 +72,7 @@ export default function AllDevices() {
     };
 
     return (
-        <div className='space-y-8'>
+        <div className='space-y-5'>
             <div className="flex items-center gap-2 px-20">
                 <div className="flex-1">
                     <h2 className='text-lg font-medium'>Active Devices</h2>

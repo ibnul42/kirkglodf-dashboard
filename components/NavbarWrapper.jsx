@@ -4,6 +4,8 @@ import dynamic from "next/dynamic";
 import ImageComponent from './ImageComponent';
 import Image from "next/image";
 import Sidebar from "./Sidebar";
+import Notifications from "./Notifications";
+import Link from "next/link";
 
 
 export default function NavbarWrapper({ children = null }) {
@@ -18,7 +20,7 @@ export default function NavbarWrapper({ children = null }) {
       <div className="flex items-center justify-between gap-3 px-3 pt-1 relative pb-6 bg-transparent">
         {/* Menu Icon */}
         <div onClick={toggleSidebar} className="p-1 cursor-pointer">
-           <Image src='/assets/icons/menu.svg' width={500} height={500} alt='' className='w-4 h-auto' />
+          <Image src='/assets/icons/menu.svg' width={500} height={500} alt='' className='w-4 h-auto' />
         </div>
 
         {/* Center Content */}
@@ -28,10 +30,12 @@ export default function NavbarWrapper({ children = null }) {
 
         {/* Right Section */}
         <div className="flex gap-4">
-          <Image src='/assets/icons/notification.svg' width={500} height={500} alt='' className='w-8 h-auto' />
-          <div className="w-8 h-8 rounded-full overflow-hidden">
+          <Notifications />
+          <Link
+          href='/settings'
+          className="w-8 h-8 rounded-full overflow-hidden">
             <ImageComponent src="/assets/profile.jpg" className="object-cover" />
-          </div>
+          </Link>
         </div>
       </div>
 

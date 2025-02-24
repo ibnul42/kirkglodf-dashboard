@@ -12,7 +12,6 @@ export default function page() {
     <BackgroundPhoto
       src="/assets/dashboard.svg"
       alt="Background Photo"
-      style={{display: 'flex', flexDirection: 'column', paddingBottom: '20px'}}
     >
       <Header />
       <NavbarWrapper>

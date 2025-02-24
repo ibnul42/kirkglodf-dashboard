@@ -26,7 +26,7 @@ const BackgroundPhoto = ({ src, children, style, blur = 0 }) => {
       />
 
       {/* Content on Top */}
-      <div className="relative w-full h-full" style={{
+      <div className="relative w-full h-full pb-4 overflow-hidden" style={{
         ...style
       }}>{children}</div>
     </div>

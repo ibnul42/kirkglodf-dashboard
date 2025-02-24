@@ -13,9 +13,9 @@ export default function WeatherPage() {
             <NavbarWrapper>
                 <h1 className='text-2xl font-semibold text-[#010C06]'>Live Weather</h1>
             </NavbarWrapper>
-            <section className='flex-1 flex justify-center items-start'>
-                <div className="w-full max-w-[720px] grid grid-cols-2 gap-4">
-                    <div className="col-span-2 shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] px-10 py-8 rounded-3xl">
+            <section className='flex-1 flex justify-center items-start pb-4'>
+                <div className="w-full max-w-[720px] grid grid-cols-2 gap-5">
+                    <div className="col-span-2 shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] px-10 py-10 rounded-3xl">
                         <div className="flex items-center gap-2">
                             <div className="flex-1 space-y-2">
                                 <h2 className="text-sm font-semibold text-[#31ED93]">Today's Weather</h2>
@@ -30,7 +30,7 @@ export default function WeatherPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-1 shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] px-10 py-5 rounded-3xl flex items-center justify-center gap-4">
+                    <div className="col-span-1 shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] px-10 py-6 rounded-3xl flex items-center justify-center gap-4">
                         <div className="w-20 h-20 rounded-full bg-[rgba(49,237,147,0.1)] flex items-center justify-center">
                             <TemperatureIcon className='w-auto h-12' />
                         </div>
@@ -39,7 +39,7 @@ export default function WeatherPage() {
                             <p className='text-sm text-[#9B9B9B]'>Living Room</p>
                         </div>
                     </div>
-                    <div className="col-span-1 shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] px-10 py-5 rounded-3xl flex items-center justify-center gap-4">
+                    <div className="col-span-1 shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] px-10 py-6 rounded-3xl flex items-center justify-center gap-4">
                         <div className="w-20 h-20 rounded-full bg-[rgba(49,237,147,0.1)] flex items-center justify-center">
                             <OutsideIcon className='w-auto h-9' />
                         </div>
@@ -48,7 +48,7 @@ export default function WeatherPage() {
                             <p className='text-sm text-[#9B9B9B]'>Outside</p>
                         </div>
                     </div>
-                    <div className="col-span-1 shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] px-10 py-5 rounded-3xl flex items-center justify-center gap-4">
+                    <div className="col-span-1 shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] px-10 py-6 rounded-3xl flex items-center justify-center gap-4">
                         <div className="w-20 h-20 rounded-full bg-[rgba(49,237,147,0.1)] flex items-center justify-center">
                             <HumidityIcon className='w-auto h-10' />
                         </div>
@@ -57,7 +57,7 @@ export default function WeatherPage() {
                             <p className='text-sm text-[#9B9B9B]'>Water</p>
                         </div>
                     </div>
-                    <div className="col-span-1 shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] px-10 py-5 rounded-3xl flex items-center justify-center gap-4">
+                    <div className="col-span-1 shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] px-10 py-6 rounded-3xl flex items-center justify-center gap-4">
                         <div className="w-20 h-20 rounded-full bg-[rgba(49,237,147,0.1)] flex items-center justify-center">
                             <FlashIcon className='w-auto h-10' />
                         </div>
