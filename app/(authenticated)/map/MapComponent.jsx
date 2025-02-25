@@ -1,6 +1,6 @@
 "use client";
-import mapboxgl from "mapbox-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
+import maplibregl from "maplibre-gl";
+import "maplibre-gl/dist/maplibre-gl.css";
 import { useEffect, useRef, useState } from "react";
 
 export default function MapComponent() {
@@ -13,23 +13,22 @@ export default function MapComponent() {
     const location = [90.4125, 23.8103];
 
     useEffect(() => {
-        mapboxgl.accessToken =
-            process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
-
         if (!mapContainerRef.current) {
             console.error("Map container not found!");
             return;
         }
 
         try {
-            mapRef.current = new mapboxgl.Map({
+            mapRef.current = new maplibregl.Map({
                 container: mapContainerRef.current,
-                style: "mapbox://styles/mapbox/light-v10",
+                // style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+                // style: "https://tiles.stadiamaps.com/styles/alidade_smooth.json",
+                style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
                 center: location,
                 zoom: zoom,
             });
 
-            new mapboxgl.Marker({ color: "#31ED93" })
+            new maplibregl.Marker({ color: "#31ED93" })
                 .setLngLat(location)
                 .addTo(mapRef.current);
 
@@ -54,14 +53,14 @@ export default function MapComponent() {
                         },
                     });
                 } catch (layerError) {
-                    console.error("Error adding Mapbox layer:", layerError);
+                    console.error("Error adding MapLibre layer:", layerError);
                     setMapError("Failed to load the map layer.");
                 }
             });
 
             mapRef.current.on("zoomend", () => setZoom(mapRef.current.getZoom()));
         } catch (error) {
-            console.error("Mapbox initialization error:", error);
+            console.error("MapLibre initialization error:", error);
             setMapError("Failed to load the map.");
         }
 
