@@ -4,12 +4,11 @@ import { useHomeContext } from "@/app/context-api";
 
 
 const CameraOption = () => {
-  const rooms = ["Living Room", "Study Room", "Bed Room", "Bed Room 2", "Balcony"];
-  const { selectedCamera, setSelectedCamera } = useHomeContext();
+  const { selectedCamera, setSelectedCamera, cameraRooms } = useHomeContext();
 
   return (
     <div className="flex gap-3">
-      {rooms.map((room) => (
+      {cameraRooms.map((room) => (
         <button
           key={room}
           className={`px-5 py-3 rounded-full border border-[#ECECEC] shadow-[0_10px_88px_36px_rgba(2,106,56,0.05)] ${selectedCamera === room ? "bg-[#31ED93] text-white" : "text-[#9B9B9B]"

@@ -2,15 +2,16 @@
 import React, { useState, useRef } from 'react';
 import ArrowFillIcon from '@/components/IconComponent/ArrowFillIcon';
 import useClickOutside from '@/hooks/useClickOutside';
+import { useHomeContext } from '@/app/context-api';
 
 export default function OverallInfo() {
-    const [selectedRoom, setSelectedRoom] = useState('Living Room');
+    
+    const { selectedRoom, setSelectedRoom, dashboardRooms } = useHomeContext();
     const [isOpen, setIsOpen] = useState(false);
 
     const buttonRef = useRef();
     const dropdownRef = useClickOutside(() => setIsOpen(false), buttonRef);
 
-    const rooms = ['Living Room', 'Dining', 'bedroom 1', 'bedroom 2'];
 
     const handleSelection = (room) => {
         setSelectedRoom(room);
@@ -42,7 +43,7 @@ export default function OverallInfo() {
                 {/* Dropdown List */}
                 {isOpen && (
                     <div ref={dropdownRef} className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg overflow-hidden w-48 z-10">
-                        {rooms.map((room) => (
+                        {dashboardRooms.map((room) => (
                             <p
                                 key={room}
                                 onClick={() => handleSelection(room)}

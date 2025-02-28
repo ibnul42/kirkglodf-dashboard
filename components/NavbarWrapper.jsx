@@ -7,7 +7,6 @@ import Sidebar from "./Sidebar";
 import Notifications from "./Notifications";
 import Link from "next/link";
 
-
 export default function NavbarWrapper({ children = null }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -32,8 +31,8 @@ export default function NavbarWrapper({ children = null }) {
         <div className="flex gap-4">
           <Notifications />
           <Link
-          href='/settings'
-          className="w-8 h-8 rounded-full overflow-hidden">
+            href='/settings'
+            className="w-8 h-8 rounded-full overflow-hidden">
             <ImageComponent src="/assets/profile.jpg" className="object-cover" />
           </Link>
         </div>
@@ -46,7 +45,7 @@ export default function NavbarWrapper({ children = null }) {
       ></div>
 
       {/* Sidebar */}
-      <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+        <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
     </>
   );
 }

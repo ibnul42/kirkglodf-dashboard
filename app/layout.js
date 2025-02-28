@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { HomeContextProvider } from "./context-api";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -20,7 +21,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.className} antialiased w-screen h-screen overflow-hidden bg-white`}
       >
-        {children}
+        <HomeContextProvider>
+          {children}
+        </HomeContextProvider>
       </body>
     </html>
   );

@@ -8,13 +8,13 @@ const cameraImages = {
     "Living Room": "/assets/living-room.png",
     "Study Room": "/assets/study-room.jpg",
     "Bed Room": "/assets/bed-room.jpg",
-    "Bed Room 2": "/assets/bed-room-2.jpg",
+    "Bed Room 2": "/assets/study-room.jpg",
     "Balcony": "/assets/balcony.jpg",
 };
 
 export default function CameraView() {
     const [isVisible, setIsVisible] = useState(true);
-    const { selectedCamera, setSelectedCamera } = useHomeContext();
+    const { selectedCamera } = useHomeContext();
 
     useEffect(() => {
         const interval = setInterval(() => {
